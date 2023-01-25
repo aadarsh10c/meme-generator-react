@@ -5,7 +5,7 @@ export default function Header (){
     return(
         <header className="header">
             <div className="header__main">
-                <img src={trollUrl} alt="" className="header__main-img" />
+                <img src={trollUrl} alt="trollFace-Icon" className="header__main-img" />
                 <h3 className="header__main-title">
                     Meme Generator
                 </h3>

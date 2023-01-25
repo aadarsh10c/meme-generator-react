@@ -1,0 +1,24 @@
+.header{
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-img{
+            width: 3rem;
+            height: 2.5rem;
+            margin-right: 1rem;
+        }
+        &-title{
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+    }
+    &__sub{
+
+    }
+}
