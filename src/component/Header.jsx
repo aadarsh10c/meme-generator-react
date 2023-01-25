@@ -1,11 +1,11 @@
 import React from 'react';
-
+import trollUrl from '../assets/troll-face.png'
 
 export default function Header (){
     return(
         <header className="header">
             <div className="header__main">
-                <img src="" alt="" className="header__main-img" />
+                <img src={trollUrl} alt="" className="header__main-img" />
                 <h3 className="header__main-title">
                     Meme Generator
                 </h3>
