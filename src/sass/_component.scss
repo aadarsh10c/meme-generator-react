@@ -19,6 +19,49 @@
         }
     }
     &__sub{
+        font-weight: 300;
+    }
+}
+.content{
+    padding: 1rem 2rem;
+    &__input{
+        display: grid;
+        grid-template: 4rem 4rem / 1fr 1fr;
+        gap: 1.5rem;
+        &-top{
+            font-family: "Karla", sans-serif;
+            border-radius: 5px;
+            border: 1px solid #D5D4D8;
+            text-indent: .5rem;
+            height: 3rem ;
+        }
+        &-bottom{
+            font-family: "Karla", sans-serif;
+            border-radius: 5px;
+            border: 1px solid #D5D4D8;
+            text-indent: .5rem;
+            height: 3rem ;
+        }
+        &-generator{
+            margin-top: -1rem;
+            grid-column: 1 / -1;
+            height: 3rem ;
+            font-family: "Karla", sans-serif;
+            border-radius: 5px;
+            background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
 
+    }
+    &__display{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-img{
+            width: 100%;
+            height: 100%;
+        }
     }
 }
