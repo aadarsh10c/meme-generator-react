@@ -17,18 +17,42 @@ export default function Content(){
             imageUrl: url
         })
     }
+
+    function handleChange( event ){
+        const { name , value } = event.target
+        setMeme( {
+            ...meme,
+            [name]:value
+        })
+    }
+
     return (
         <main className="content">
             <div className="content__input">
-                <input type="text" className="content__input-top" placeholder="Top Text"/>
-                <input type="text" className="content__input-bottom" placeholder="Bottom Text" />
+                <input type="text" 
+                className="content__input-top" 
+                placeholder="Top Text"
+                name="topName"
+                value={meme.topName}
+                onChange={handleChange}
+                />
+
+                <input type="text" 
+                className="content__input-bottom" 
+                placeholder="Bottom Text" 
+                name="bottomName"
+                value={meme.bottomName}
+                onChange={handleChange}
+                />
                 <button className="content__input-generator"
                     onClick={ getURL }>
                     Get a new meme Image 🖼
                 </button>
             </div>
             <div className="content__display">
-                <img src={meme.imageUrl} alt="Random Meme" className="content__display-img" />
+                <h1 className="content__display-topText">{meme.topName}</h1>
+                <h1 className="content__display-bottomText">{meme.bottomName}</h1>
+                <img src={meme.imageUrl} alt="Random Meme" className="content__display-img" />               
             </div>
         </main>
 

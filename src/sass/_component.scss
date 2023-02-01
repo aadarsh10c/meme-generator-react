@@ -56,12 +56,25 @@
 
     }
     &__display{
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         &-img{
             width: 100%;
             height: 100%;
+        }
+        &-topText{
+            color: orangered;
+            position: absolute;
+            top:4%;
+            font-weight: 900;
+        }
+        &-bottomText{
+            color: orangered;
+            position: absolute;
+            bottom: 4%;
+            font-weight: 900;
         }
     }
 }
